@@ -1,0 +1,22 @@
+ls: cannot access /var/www/demo-rocketeer/laravel53-demo/staging/releases: No such file or directory
+/usr/local/bin/composer
+$ git --version
+git --version
+git version 1.9.1
+git version 1.9.1
+/usr/bin/php
+$ mkdir /var/www/demo-rocketeer/laravel53-demo/
+mkdir /var/www/demo-rocketeer/laravel53-demo/
+mkdir: cannot create directory ‘/var/www/demo-rocketeer/laravel53-demo/’: No such file or directory
+$ mkdir -p /var/www/demo-rocketeer/laravel53-demo/staging/releases
+mkdir -p /var/www/demo-rocketeer/laravel53-demo/staging/releases
+mkdir: cannot create directory ‘/var/www/demo-rocketeer’: Permission denied
+$ mkdir -p /var/www/demo-rocketeer/laravel53-demo/staging/current
+mkdir -p /var/www/demo-rocketeer/laravel53-demo/staging/current
+mkdir: cannot create directory ‘/var/www/demo-rocketeer’: Permission denied
+$ mkdir -p /var/www/demo-rocketeer/laravel53-demo/staging/shared
+mkdir -p /var/www/demo-rocketeer/laravel53-demo/staging/shared
+mkdir: cannot create directory ‘/var/www/demo-rocketeer’: Permission denied
+$ git clone "git@github.com:TungPro/laravel53-demo.git" "/var/www/demo-rocketeer/laravel53-demo/staging/releases/20160911071915" --branch="develop" --depth="1"
+git clone "git@github.com:TungPro/laravel53-demo.git" "/var/www/demo-rocketeer/laravel53-demo/staging/releases/20160911071915" --branch="develop" --depth="1"
+fatal: could not create leading directories of '/var/www/demo-rocketeer/laravel53-demo/staging/releases/20160911071915': Permission denied
