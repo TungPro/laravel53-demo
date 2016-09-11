@@ -7,7 +7,6 @@ build:
     - composer install
     - npm install
     - gulp
-    - cp .env.testing .env
 compose:
   database:
     image: mysql
