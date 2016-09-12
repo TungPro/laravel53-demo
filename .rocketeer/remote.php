@@ -33,6 +33,7 @@ return [
 		'storage',
 		'bootstrap/cache',
 		'.env',
+		'public'
     ],
 
     // Execution
