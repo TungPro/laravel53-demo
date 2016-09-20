@@ -1,0 +1,10 @@
+ls: cannot access '/home/tungnt/deploy/laravel53-demo/releases': No such file or directory
+/usr/local/bin/composer
+$ git --version
+git --version
+git version 2.7.4
+git version 2.7.4
+/usr/bin/php
+$ mkdir /home/tungnt/deploy/laravel53-demo/
+mkdir /home/tungnt/deploy/laravel53-demo/
+mkdir: cannot create directory '/home/tungnt/deploy/laravel53-demo/': File exists

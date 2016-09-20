@@ -1,36 +1,13 @@
-# build:
-#   image: framgia/laravel-workspace
-#   commands:
-#     # - sleep 40
-# #     - chmod -R 777 storage/
-# #     - chmod -R 777 bootstrap/cache/
-# #     - composer install
-# #     - npm install
-# #     - gulp
-# #     - cp .env.testing .env
-# compose:
-#   database:
-#     image: mysql
-#     environment:
-#       MYSQL_DATABASE: homestead
-#       MYSQL_USER: homestead
-#       MYSQL_PASSWORD: secret
-#       MYSQL_ROOT_PASSWORD: root
 deploy:
   rocketeer:
-    image: framgia/drone-plugin-ssh-php:php5
+    image: fdplugins/ssh-php
     when:
       branch: develop
     commands:
       - php rocketeer.phar deploy --stage=staging --no-interaction
   rocketeer:
-    image: framgia/drone-plugin-ssh-php:php5
+    image: fdplugins/ssh-php
     when:
       branch: master
     commands:
       - php rocketeer.phar deploy --stage=production --branch=master --no-interaction
-cache:
-  mount:
-    - .git
-    - vendor
-    - node_modules

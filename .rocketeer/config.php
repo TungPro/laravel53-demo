@@ -39,7 +39,7 @@ return [
     'connections'      => [
         'staging' => [
             'host'      => '10.0.1.55',
-            'username'  => 'nguyen.thanh.tung',
+            'username'  => 'deploy',
             'password'  => '',
             'key'       => '',
             'keyphrase' => '',

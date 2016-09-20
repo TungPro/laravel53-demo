@@ -1,0 +1,8 @@
+ls: cannot access /var/www/test-rocketeer/laravel53-demo/releases: No such file or directory
+/usr/local/bin/composer
+$ git --version
+git --version
+git version 1.9.1
+git version 1.9.1
+/usr/bin/php
+|=> Your server is ready to deploy

@@ -20,7 +20,7 @@ return [
 
     // The root directory where your applications will be deployed
     // This path *needs* to start at the root, ie. start with a /
-    'root_directory' => '/var/www/test-rocketeer',
+    'root_directory' => '/home/tungnt/deploy',
 
     // The folder the application will be cloned in
     // Leave empty to use `application_name` as your folder name
@@ -33,7 +33,8 @@ return [
 		'storage',
 		'bootstrap/cache',
 		'.env',
-		'public'
+		'public',
+		'vendor'
     ],
 
     // Execution
@@ -71,9 +72,9 @@ return [
         // a single command as a string or an array of commands
         'callback' => function ($task, $file) {
             return [
-                // sprintf('chmod -R 755 %s', $file),
-  //               sprintf('chmod -R g+s %s', $file),
-  //               sprintf('chown -R www-data:www-data %s', $file),
+                sprintf('chmod -R 755 %s', $file),
+                sprintf('chmod -R g+s %s', $file),
+                sprintf('chown -R www-data:www-data %s', $file),
             ];
         },
 

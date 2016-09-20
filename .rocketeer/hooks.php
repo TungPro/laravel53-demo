@@ -17,18 +17,22 @@ return [
     // Tasks to execute before the core Rocketeer Tasks
     'before' => [
         'setup'   => [],
-        'deploy'  => [],
+        'deploy'  => [
+        ],
         'cleanup' => [],
     ],
 
     // Tasks to execute after the core Rocketeer Tasks
     'after'  => [
-        'setup'   => [],
-        'deploy'  => [],
+        'setup'   => [
+			function ($task) {
+				$folder = $task->releasesManager->paths->getFolder('shared');
+				return $task->run('touch ' . $folder . '/.env' );
+			},
+        ],
+        'deploy'  => [
+		],
         'cleanup' => [],
     ],
-
-    // Custom Tasks to register with Rocketeer
-    'custom' => [],
 
 ];
