@@ -4,6 +4,7 @@ deploy:
     when:
       branch: develop
     commands:
+      - ping 10.0.1.55
       - php rocketeer.phar deploy --stage=staging --no-interaction
   rocketeer:
     image: fdplugins/ssh-php
