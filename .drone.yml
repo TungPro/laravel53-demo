@@ -4,8 +4,6 @@ deploy:
     when:
       branch: develop
     commands:
-      - cat ~/.ssh/id_rsa.pub
-      - cat /root/.ssh/id_rsa.pub
       - php rocketeer.phar deploy --stage=staging --no-interaction
   rocketeer:
     image: fdplugins/ssh-php
