@@ -14,6 +14,7 @@ deploy:
 
 notify:
   chatwork:
-    image: fdplugins/ssh-php
-    xxxx: 
-      - yyy: 2
+    image: fdplugins/chatwork
+    room_id: 58166158
+    token: $$CHATWORK_TOKEN
+    
