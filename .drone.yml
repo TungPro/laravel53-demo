@@ -11,3 +11,9 @@ deploy:
       branch: master
     commands:
       - php rocketeer.phar deploy --stage=production --branch=master --no-interaction
+
+notify:
+  chatwork:
+    image: fdplugins/ssh-php
+    xxxx: 
+      - yyy: 2
