@@ -17,4 +17,5 @@ notify:
     image: fdplugins/chatwork
     room_id: 58166158
     token: $$CHATWORK_TOKEN
+    format: "[info][title]{repo.owner}/{repo.name}#{repo.commit} {build.status}[/title]Branch: {build.branch}\r\nAuthor: {build.author}\r\n{system.link_url}/{repo.full_name}/{build.number}[/info]"
     
