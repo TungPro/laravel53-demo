@@ -1,0 +1,25 @@
+ls: cannot access /home/tungnt/deploy/laravel53-demo/staging/releases: No such file or directory
+/usr/local/bin/composer
+$ git --version
+git --version
+git version 1.9.1
+git version 1.9.1
+/usr/bin/php
+$ mkdir /home/tungnt/deploy/laravel53-demo/
+mkdir /home/tungnt/deploy/laravel53-demo/
+mkdir: cannot create directory ‘/home/tungnt/deploy/laravel53-demo/’: No such file or directory
+$ mkdir -p /home/tungnt/deploy/laravel53-demo/staging/releases
+mkdir -p /home/tungnt/deploy/laravel53-demo/staging/releases
+mkdir: cannot create directory ‘/home/tungnt’: Permission denied
+$ mkdir -p /home/tungnt/deploy/laravel53-demo/staging/current
+mkdir -p /home/tungnt/deploy/laravel53-demo/staging/current
+mkdir: cannot create directory ‘/home/tungnt’: Permission denied
+$ mkdir -p /home/tungnt/deploy/laravel53-demo/staging/shared
+mkdir -p /home/tungnt/deploy/laravel53-demo/staging/shared
+mkdir: cannot create directory ‘/home/tungnt’: Permission denied
+$ touch /home/tungnt/deploy/laravel53-demo/staging/shared/.env
+touch /home/tungnt/deploy/laravel53-demo/staging/shared/.env
+touch: cannot touch ‘/home/tungnt/deploy/laravel53-demo/staging/shared/.env’: No such file or directory
+$ git clone "git@github.com:TungPro/laravel53-demo.git" "/home/tungnt/deploy/laravel53-demo/staging/releases/20160921005248" --branch="develop" --depth="1"
+git clone "git@github.com:TungPro/laravel53-demo.git" "/home/tungnt/deploy/laravel53-demo/staging/releases/20160921005248" --branch="develop" --depth="1"
+fatal: could not create leading directories of '/home/tungnt/deploy/laravel53-demo/staging/releases/20160921005248': Permission denied
