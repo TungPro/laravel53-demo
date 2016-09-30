@@ -14,7 +14,6 @@ deploy:
 
 notify:
   chatwork:
-    image: fdplugins/chatwork
+      image: fdplugins/chatwork:debug
     room_id: 58166158
     token: $$CHATWORK_TOKEN
-    format: "[info][title]{repo.owner}/{repo.name}#{build.commit} {build.status}[/title]Branch: {build.branch}\r\nAuthor: {build.author}\r\nMessage: {build.message}\r\n{system.link_url}/{repo.full_name}/{build.number}[/info]"
