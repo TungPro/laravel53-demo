@@ -1,19 +1,13 @@
-deploy:
-  rocketeer:
-    image: fdplugins/ssh-php
-    when:
-      branch: develop
-    commands:
-      - php rocketeer.phar deploy --stage=staging --no-interaction
-  rocketeer:
-    image: fdplugins/ssh-php
-    when:
-      branch: master
-    commands:
-      - php rocketeer.phar deploy --stage=production --branch=master --no-interaction
-
-notify:
-  chatwork:
-    image: fdplugins/chatwork:debug
-    room_id: 58166158
-    token: $$CHATWORK_TOKEN
+pipeline:
+    deploy:
+        rocketeer:
+            image: fdplugins/ssh-php
+            when:
+                branch: develop
+            commands:
+                - php rocketeer.phar deploy --stage=staging --no-interaction
+    notify:
+        chatwork:
+            image: fdplugins/chatwork:debug
+            room_id: 58166158
+            token: $$CHATWORK_TOKEN
